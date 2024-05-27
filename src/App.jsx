@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import AparicionesM from './pages/AparicionesM'; 
 import Santos from './pages/Santos'; 
 import Vida from './pages/Vida'; 
-import Navbar from './view/Navbar'; 
+import NavBar from './view/NavBar'; 
 import Footer from './view/Footer'; 
 
 
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <BrowserRouter>
-        <Navbar />
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/apariciones-marianas" element={<AparicionesM />} />

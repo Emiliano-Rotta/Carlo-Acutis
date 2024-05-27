@@ -1,10 +1,23 @@
-function AparicionesM() {
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-    return (
-      <>
-        esto es Apariciones Marianas
-      </>
-    )
-  }
-  
-  export default AparicionesM
+function AparicionesM() {
+  return (
+    <>
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="" />
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>
+              Hacer 9 apariciones en un objeto y hacer un map
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+    </>
+
+    
+  );
+}
+
+export default AparicionesM;

@@ -3,12 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from 'react-router-dom';
+import sinfondo from "../assets/img/carlo/sinfondo.png"
 
 function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand><NavLink to={"/"}>Carlo Acutis</NavLink></Navbar.Brand>
+        <Navbar.Brand><NavLink to={"/"}><img src={sinfondo} alt='' width={"10%"}/></NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

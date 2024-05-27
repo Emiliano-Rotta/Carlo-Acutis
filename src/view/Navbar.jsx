@@ -2,20 +2,21 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Carlo Acutis</Navbar.Brand>
+        <Navbar.Brand><NavLink to={"/"}>Carlo Acutis</NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Milagros Eucaristicos</Nav.Link>
-            <Nav.Link href="#link">Santos</Nav.Link>
-            <Nav.Link href="#link">Apariciones Marianas</Nav.Link>
+            <Nav.Link><NavLink to={"/milagros-eucaristicos"}>Milagros Eucaristicos</NavLink></Nav.Link>
+            <Nav.Link><NavLink to={"/santos"}>Santos</NavLink></Nav.Link>
+            <Nav.Link><NavLink to={"/apariciones-marianas"}>Apariciones Marianas</NavLink></Nav.Link>
             <NavDropdown title="Bibliografia" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Vida</NavDropdown.Item>
+              <NavDropdown.Item><NavLink to={"/vida"}>Vida</NavLink></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Linea de tiempo
               </NavDropdown.Item>
